@@ -63,4 +63,5 @@ td {
   background-image: url("assets/balloons.png");
   background-size: cover;
   animation: papel-picado 2s ease-in forwards;
+  animation-fill-mode: forwards;
 }

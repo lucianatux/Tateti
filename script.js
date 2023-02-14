@@ -14,14 +14,16 @@ for (let i = 0; i < cells.length; i++) {
   });
 }
 
-resetButton.addEventListener("click", function () {
-  for (var i = 0; i < cells.length; i++) {
-    cells[i].innerHTML = "";
-  }
-  turn = "X";
-  currentPlayer.innerHTML = "Turno del jugador " + turn;
-  resultDisplay.innerHTML = "Resultado";
-});
+function resetButtonClick() {
+    for (var i = 0; i < cells.length; i++) {
+        cells[i].innerHTML = "";
+      }
+      turn = "X";
+      currentPlayer.innerHTML = "Turno del jugador " + turn;
+      resultDisplay.innerHTML = "Resultado";
+}
+
+resetButton.addEventListener("click", resetButtonClick);
 
 function switchTurn() {
   if (turn === "X") {
@@ -62,6 +64,7 @@ function checkForWin() {
       switchTurn();
       resultDisplay.textContent = "¡" + turn + " ganó!";
       showPapelPicado();
+      setTimeout(resetButtonClick, 2000);
       return true;
     }
   }
@@ -78,14 +81,18 @@ document.getElementById("darkmode").addEventListener("click", function () {
 });
 
 function showPapelPicado() {
-    let container = document.getElementById('papel-picado-container');
-    for (let i = 0; i < 50; i++) {
-      let papelPicado = document.createElement('div');
-      papelPicado.classList.add('papel-picado');
-      papelPicado.style.setProperty('--x', Math.random() * window.innerWidth + 'px');
-      papelPicado.style.setProperty('--y', Math.random() * window.innerHeight + 'px');
-      container.appendChild(papelPicado);
-    }
+  let container = document.getElementById("papel-picado-container");
+  for (let i = 0; i < 50; i++) {
+    let papelPicado = document.createElement("div");
+    papelPicado.classList.add("papel-picado");
+    papelPicado.style.setProperty(
+      "--x",
+      Math.random() * window.innerWidth + "px"
+    );
+    papelPicado.style.setProperty(
+      "--y",
+      Math.random() * window.innerHeight + "px"
+    );
+    container.appendChild(papelPicado);
   }
-  
-  
+}

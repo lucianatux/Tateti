@@ -9,6 +9,7 @@ for (let i = 0; i < cells.length; i++) {
     if (this.textContent === "") {
       this.textContent = turn;
       switchTurn();
+      checkForWin();
     }
   });
 }
@@ -75,3 +76,16 @@ document.getElementById("darkmode").addEventListener("click", function () {
     document.body.style.color = "var(--first-color)";
   }
 });
+
+function showPapelPicado() {
+    let container = document.getElementById('papel-picado-container');
+    for (let i = 0; i < 50; i++) {
+      let papelPicado = document.createElement('div');
+      papelPicado.classList.add('papel-picado');
+      papelPicado.style.setProperty('--x', Math.random() * window.innerWidth + 'px');
+      papelPicado.style.setProperty('--y', Math.random() * window.innerHeight + 'px');
+      container.appendChild(papelPicado);
+    }
+  }
+  
+  

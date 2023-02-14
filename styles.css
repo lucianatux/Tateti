@@ -28,3 +28,33 @@ td {
     text-shadow: 1px 1px 2px #471047;
     font-size: 30px;
 }
+
+
+@keyframes papel-picado {
+    0% {
+      transform: translate(0, 100%);
+      opacity: 0;
+    }
+
+    80%{
+        transform: translate(var(--x), var(--y));
+        opacity: 1; 
+    }
+
+    100% {
+      transform: translate(var(--x), var(--y));
+      opacity: 0;
+    }
+  }
+  
+  .papel-picado {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background-image: url('assets/balloons.png');
+    background-size: contain;
+    animation: papel-picado 2s ease-in forwards;
+  }
+  

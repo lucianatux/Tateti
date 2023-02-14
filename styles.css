@@ -3,6 +3,11 @@
   --second-color: #131313;
 }
 
+body{
+    color:#471047;
+    text-align: center;
+}
+
 table {
   border-collapse: collapse;
   margin: 20px auto;

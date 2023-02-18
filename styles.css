@@ -65,3 +65,7 @@ td {
   animation: papel-picado 2s ease-in forwards;
   animation-fill-mode: forwards;
 }
+
+button{
+  background-color: rgb(177, 177, 240);
+}

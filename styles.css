@@ -1,13 +1,18 @@
 :root {
   --first-color: #e6e6e6;
   --second-color: #131313;
+  --third-color: #838383;
 }
 
 body {
-  color: #471047;
+  margin: 70px;
+  color: var(--second-color);
   text-align: center;
   overflow: hidden;
   transition: 2s;
+  /*background-image: url("./assets/multicolored-tie-dye-fabric-surface.jpg");*/
+  justify-content: center;
+  align-items: center;
 }
 
 table {
@@ -23,11 +28,11 @@ td {
   text-align: center;
   vertical-align: middle;
   font-size: 24px;
-  border: 3px solid #471047;
+  border: 3px solid var(--third-color);
 }
 
 #result {
-  text-shadow: 1px 1px 2px #471047;
+  text-shadow: 1px 1px 2px var(--second-color);
   font-size: 30px;
 }
 
@@ -67,5 +72,7 @@ td {
 }
 
 button{
-  background-color: rgb(177, 177, 240);
+  background-color: var(--first-color);
+  padding: 10px;
+  border-radius: 40%;
 }

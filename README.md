@@ -26,10 +26,6 @@ Puedes jugar una versión en vivo del juego aquí: https://lucianatux.github.io/
 - CSS
 - JavaScript
 
-## Licencia
-
-Este proyecto está bajo la Licencia MIT. Consulta el archivo [LICENSE](LICENSE) para obtener más detalles.
-
 ---
 
-¡Gracias por revisar mi proyecto! Si tienes alguna pregunta o comentario, no dudes en contactarme en [tu@email.com].
+¡Gracias por revisar mi proyecto! Si tienes alguna pregunta o comentario, no dudes en contactarme en lucianatux@yahoo.com.ar
